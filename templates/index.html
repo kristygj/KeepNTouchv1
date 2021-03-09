@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for event in events %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ BPs.query.filter_by(id=event.bp_id).first().name  }}</a> <!-- put the author of the event here, have to query it cause only have bp's id-->
+      <small class="text-muted">{{ event.date}}</small>
+    </div >
+    <h2><a class="article-title" href="#">{{ event.name }}</a></h2>
+    <p class="article-content">{{ event.description  }}</p>
+
+      {% if session.get('student') == True %}
+          DEVI FARE UN CHECK SE LO STUDENT HA GIà MESSO PARTECIPA, ALLORA -- > MOSTRA BUTTON PER DIS ISCRIVERSI
+          POI AGGIUNGI IL N* DI ISCRITTI FINORA
+
+          {{ event.id }}
+
+          <a align="right"> <form method="POST">
+         {{  confirmParticipation.hidden_tag()  }}
+            {{ confirmParticipation.event_id(value=event.id) }}
+                <fieldset class="form-group">
+                <div class="form-group ">
+                    {{ confirmParticipation.submit(class="btn btn-outline-info") }}
+                </div>
+
+            </fieldset>
+        {% endif %}
+    </form></a>
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}

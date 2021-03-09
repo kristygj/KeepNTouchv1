@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Hi {{ session.get('name') }}</h1>
+    <div class="content-section">
+        <p align="center"> <!-- #se esiste una immagine , mettila. Se no form per upload immagine del profilo! --></p>
+        <p>Your email: {{ session.get('email') }}</p>
+        <p>Your university: {{ session.get('uni') }}</p>
+
+        <p>The events to which you've booked a participation:</p>
+        <p>The events at which you participated:</p>
+
+    </div>
+
+{% endblock content %}

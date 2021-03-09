@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2a04c73-0a55-4a42-bb22-abff21888052" name="Default Changelist" comment="EE">
+      <change afterPath="$PROJECT_DIR$/templates/youcannot.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/example03$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1542044339351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/InformationSystem18_19$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1545739687391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="776eed6f-471f-45fe-a7e7-e0c79bc452d3" />
+  <component name="ProjectId" id="1Rh9wlrUptG1Z1I5pp3MwYWTQEZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="example03" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="example03" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="EMAIL_USERNAME" value="*******@mail.com" />
+        <env name="EMAIL_PASSWORD" value="********" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2a04c73-0a55-4a42-bb22-abff21888052" name="Default Changelist" comment="" />
+      <created>1541981348124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541981348124</updated>
+      <workItem from="1543994497747" duration="6679000" />
+      <workItem from="1545123674250" duration="1607000" />
+      <workItem from="1545163224751" duration="6969000" />
+      <workItem from="1545204926407" duration="4007000" />
+      <workItem from="1545739502792" duration="329000" />
+      <workItem from="1570108703562" duration="1834000" />
+      <workItem from="1614718528481" duration="5060000" />
+      <workItem from="1614789281768" duration="11289000" />
+      <workItem from="1614810406689" duration="404000" />
+      <workItem from="1614846526235" duration="179000" />
+      <workItem from="1614952708284" duration="3144000" />
+      <workItem from="1615213090695" duration="481000" />
+      <workItem from="1615224102016" duration="10447000" />
+    </task>
+    <task id="LOCAL-00001" summary="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm">
+      <created>1542717635581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542717635581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="123" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614718805859">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="123" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1614718805859" />
+    <state x="529" y="373" key="Github.CreateGistDialog" timestamp="1614810769642">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="529" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1614810769642" />
+    <state x="581" y="351" key="Github.ShareDialog" timestamp="1614953739900">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="581" y="351" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1614953739900" />
+    <state width="699" height="266" key="GridCell.Tab.0.bottom" timestamp="1615243288200">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="266" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615243288200" />
+    <state width="699" height="266" key="GridCell.Tab.0.center" timestamp="1615243288199">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="266" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615243288199" />
+    <state width="699" height="266" key="GridCell.Tab.0.left" timestamp="1615243288198">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="266" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615243288198" />
+    <state width="699" height="266" key="GridCell.Tab.0.right" timestamp="1615243288200">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="266" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615243288200" />
+    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1614793229251">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="228" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1614793229251" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1614953853218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614953853218" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615242210303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1615242210303" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/InformationSystem19_20$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1570110090074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/InformationSystem19_20_master$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1614807750893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/KeepNTouch$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1615242704256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
