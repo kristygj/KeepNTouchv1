@@ -2,9 +2,10 @@ import os
 from flask import Flask ,render_template , url_for,flash,redirect
 from flask import request,session
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import and_
 from flask_bcrypt import Bcrypt
 from flask_mail import Mail, Message
-#from flask_uploads import UploadSet, configure_uploads, IMAGES, patch_request_class
+from flask_uploads import UploadSet, configure_uploads, IMAGES, patch_request_class
 from flask_login import LoginManager,login_user,logout_user
 
 
@@ -28,9 +29,9 @@ mailobject=Mail(app)
 login_manager=LoginManager()
 login_manager.init_app(app)
 
-#photos = UploadSet('photos', IMAGES)
-#configure_uploads(app, photos)
-#patch_request_class(app)  # set maximum file size, default is 16MB
+photos = UploadSet('photos', IMAGES)
+configure_uploads(app, photos)
+patch_request_class(app)  # set maximum file size, default is 16MB
 
 #print IMAGES
 #print 'this is file path %s' % app.config['UPLOADED_PHOTOS_DEST']
@@ -57,7 +58,7 @@ class Event(db.Model):
     date = db.Column(db.Date)
     bp_id = db.Column(db.Integer, db.ForeignKey('businesspartner.id'))
     description=db.Column(db.String(500))
-    maxPeople = db.Column(db.Integer)
+    numofPeople = db.Column(db.Integer)
     location = db.Column(db.String(100))
     #partecipants = db.relationship("Student", secondary=partecipation)
 
@@ -123,56 +124,61 @@ def sendmail(**kwargs):
     #print "mail has been send"
     return True
 
-
-# @app.route('/mail')
-# def mail():
-#     send_mail('m.ghazivakili@gmail.com','Test message','mail',message_body='Hi this is a test')
-#     return 'message has beed send!'
-
-
-#@app.route("/upload",methods=["POST","GET"])
-#def upload():
- #   if session.get('id'):
-  #      if not os.path.exists('static/'+ str(session.get('id'))):
-   #         os.makedirs('static/'+ str(session.get('id')))
-    #    file_url = os.listdir('static/'+ str(session.get('id')))
-     #   file_url = [ str(session.get('id')) +"/"+ file for file in file_url]
-      #  formupload = UploadForm()
-       # #print session.get('email')
-        #if formupload.validate_on_submit():
-         #   filename = photos.save(formupload.file.data,name=str(session.get('id'))+'.jpg',folder=str(session.get('id')))
-          #  file_url.append(filename)
-        #return render_template("upload.html",formupload=formupload,filelist=file_url) # ,filelist=file_url
-    #else:
-     #   return redirect('login')
+@app.route("/upload",methods=["POST","GET"])
+def upload():
+    if session.get('id'):
+        if not os.path.exists('static/'+ str(session.get('id'))):
+            os.makedirs('static/'+ str(session.get('id')))
+        file_url = os.listdir('static/'+ str(session.get('id')))
+        file_url = [ str(session.get('id')) +"/"+ file for file in file_url]
+        formupload = UploadForm()
+        print session.get('email')
+        if formupload.validate_on_submit():
+            filename = photos.save(formupload.file.data,name=str(session.get('id'))+'.jpg',folder=str(session.get('id')))
+            file_url.append(filename)
+        return render_template("upload.html",formupload=formupload,filelist=file_url) # ,filelist=file_url
+    else:
+       return redirect('login')
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     confirmParticipation = forms.confirmParticipation()
-    if confirmParticipation.validate_on_submit():
+    deleteParticipation = forms.deleteParticipation()
+
+    if "submitD" in request.form and deleteParticipation.validate_on_submit():
+        print "qua ci sei"
+        event_id = deleteParticipation.event_id.data
+        event = Event.query.filter_by(id=event_id).first()
+        student = Student.query.filter_by(id=session.get('id')).first()
+        event.numofPeople += -1
+        student.partecipations.remove(event)
+        db.session.commit()
+
+        return redirect('home')
+    elif "submitC" in request.form and confirmParticipation.validate_on_submit():
         # add user to the list of participants
         event_id = confirmParticipation.event_id.data
         event = Event.query.filter_by(id=event_id).first()
         student = Student.query.filter_by(id=session.get('id')).first()
-        print "event id is " + str(event_id)
-        print "student is " + student.name
-        print "partecipations are " + str(student.partecipations)
+
+        if not Student.query.join(partecipation).join(Event).filter( (partecipation.c.student_id == student.id) & (partecipation.c.event_id == event.id)).first():
+            event.numofPeople += 1
+
         student.partecipations.append(event)
-
         db.session.add(student)
-        #db.session.add(event)
-
+        db.session.add(event)
         db.session.commit()
 
         return redirect('home')
+
     if session.get('id'):
 
         if Student.query.filter_by(email=session.get('email')).first(): # if student then show the wall
             events=Event.query.all()
-            return render_template('index.html', events=events, confirmParticipation=confirmParticipation, BPs = BusinessPartner)
+            return render_template('index.html', events=events, confirmParticipation=confirmParticipation, deleteParticipation=deleteParticipation, partecipation=partecipation, Student = Student, Event=Event, BPs = BusinessPartner, and_=and_)
         else: # if bp show its own events
-            events = Event.query.filter_by(id=session.get('id'))
+            events = Event.query.filter_by(bp_id=session.get('id'))
             return render_template('index.html', events=events, BPs = BusinessPartner)
     else:
         return redirect('login')
@@ -251,7 +257,7 @@ def createEvent():
             date=formpage.date.data,
             bp_id=session.get('id'),
             description=formpage.description.data,
-            maxPeople=formpage.maxPeople.data,
+            numofPeople=0,
             location=formpage.location.data
         )
 
@@ -270,9 +276,9 @@ def createEvent():
 
 
 @app.route("/profile")
-def profiles(): #correct this one
+def profiles():
     if session.get('id'):
-        if session.get('student') == True:
+        if session.get('student') :
             st=Student.query.filter_by().all()
             return render_template("profile.html",student=st)
 

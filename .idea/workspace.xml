@@ -11,7 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2a04c73-0a55-4a42-bb22-abff21888052" name="Default Changelist" comment="EE">
-      <change afterPath="$PROJECT_DIR$/templates/youcannot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/createevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createevent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/youcannot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/youcannot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website.db" beforeDir="false" afterPath="$PROJECT_DIR$/website.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +131,9 @@
       <workItem from="1614952708284" duration="3144000" />
       <workItem from="1615213090695" duration="481000" />
       <workItem from="1615224102016" duration="10447000" />
+      <workItem from="1615278869336" duration="5484000" />
+      <workItem from="1615303377433" duration="162000" />
+      <workItem from="1615324087830" duration="3469000" />
     </task>
     <task id="LOCAL-00001" summary="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm">
       <created>1542717635581</created>
@@ -160,26 +173,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="529" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1614810769642" />
-    <state x="581" y="351" key="Github.ShareDialog" timestamp="1614953739900">
+    <state x="581" y="351" key="Github.ShareDialog" timestamp="1615279152364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="581" y="351" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1614953739900" />
-    <state width="699" height="266" key="GridCell.Tab.0.bottom" timestamp="1615243288200">
+    <state x="581" y="351" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1615279152364" />
+    <state x="494" y="152" key="Github.UntrackedFilesDialog" timestamp="1615279199337">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="266" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615243288200" />
-    <state width="699" height="266" key="GridCell.Tab.0.center" timestamp="1615243288199">
+    <state x="494" y="152" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1615279199337" />
+    <state width="699" height="227" key="GridCell.Tab.0.bottom" timestamp="1615329202391">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="266" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615243288199" />
-    <state width="699" height="266" key="GridCell.Tab.0.left" timestamp="1615243288198">
+    <state width="699" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615329202391" />
+    <state width="699" height="227" key="GridCell.Tab.0.center" timestamp="1615329202389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="266" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615243288198" />
-    <state width="699" height="266" key="GridCell.Tab.0.right" timestamp="1615243288200">
+    <state width="699" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615329202389" />
+    <state width="699" height="227" key="GridCell.Tab.0.left" timestamp="1615329202388">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="266" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615243288200" />
+    <state width="699" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615329202388" />
+    <state width="699" height="227" key="GridCell.Tab.0.right" timestamp="1615329202390">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="699" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615329202390" />
     <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1614793229251">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -188,14 +205,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614953853218" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615242210303">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1615279134698">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1615242210303" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1615279134698" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615281679119">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1615281679119" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="jinja2-line">
+          <url>file://$PROJECT_DIR$/templates/index.html</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/InformationSystem19_20$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1570110090074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/InformationSystem19_20_master$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1614807750893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KeepNTouch$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1615242704256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/KeepNTouch$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1615328366987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

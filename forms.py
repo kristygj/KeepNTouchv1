@@ -8,7 +8,7 @@ class Formname(FlaskForm):
     name = StringField('Name:', validators=[DataRequired(), Length(min=2, max=100)])
     usertype = RadioField('You are', choices=[('Student', 'Student'), ('Activity Owner', 'Activity Owner')])
     email = StringField('Email', validators=[DataRequired(), Email()])
-    university = StringField('University', validators=[Length(min=2, max=50)])
+    university = StringField('University', validators=[Length(max=50)])
 
     password = PasswordField('Password', validators=[DataRequired()])
     password_con = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
@@ -24,7 +24,6 @@ class formCreateEvent(FlaskForm):
     name = StringField('Name:', validators=[DataRequired(), Length(min=2, max=100)])
     date = DateField('Date: ', default=date.today, validators=[DataRequired()], )
     description = TextAreaField('Description:', validators=[DataRequired(), Length(min=50, max=500)])
-    maxPeople = IntegerField('Maximum # of Partecipants:', validators=[DataRequired()])
     location = StringField('Location:', validators=[DataRequired(), Length(min=3, max=100)])
 
     submit = SubmitField('Submit')
@@ -36,9 +35,13 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Submit')
 
 class confirmParticipation(FlaskForm):
-    event_id = IntegerField('event_id',render_kw={'readonly': True}) #hidden so not modifiable
-    submit = SubmitField('Confirm Participation')
+    event_id = IntegerField('event_id',render_kw={'readonly': True})
+    submitC = SubmitField('Confirm Participation')
 
-#class UploadForm(FlaskForm):
- #   file = FileField('file',validators=[DataRequired()])
-  #  upload=SubmitField('upload')
+class deleteParticipation(FlaskForm):
+    event_id = IntegerField('event_id', render_kw={'readonly': True})
+    submitD = SubmitField('Delete Participation')
+
+class UploadForm(FlaskForm):
+    file = FileField('file',validators=[DataRequired()])
+    upload=SubmitField('upload')

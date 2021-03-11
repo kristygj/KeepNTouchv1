@@ -63,20 +63,6 @@
                 </div>
 
                 <div class="form-group">
-
-                    {{ formpage.maxPeople.label(class="form-control-lable") }}
-                      {% if formpage.maxPeople.errors %}
-                        {{ formpage.maxPeople(class="form-control form-control-lg is-invalid") }}
-                        <div class="invalid-feedback">
-                        {% for eroor in formpage.maxPeople.errors %}
-                            <span>{{ eroor }}</span>
-                        {% endfor %}
-                        </div>
-                    {% else %}
-                    {{ formpage.maxPeople(class="form-control form-control-lg") }}
-                    {% endif %}
-                </div>
-                <div class="form-group">
                     {{ formpage.location.label(class="form-control-lable") }}
                     {% if formpage.location.errors %}
                         {{ formpage.location(class="form-control form-control-lg is-invalid") }}
