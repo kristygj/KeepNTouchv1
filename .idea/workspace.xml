@@ -1,64 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2a04c73-0a55-4a42-bb22-abff21888052" name="Default Changelist" comment="EE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/createevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createevent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/youcannot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/youcannot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website.db" beforeDir="false" afterPath="$PROJECT_DIR$/website.db" afterDir="false" />
-    </list>
+    <list default="true" id="ad55859c-e15c-47c4-9901-04cfc12794e0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/example03$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1542044339351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/InformationSystem18_19$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1545739687391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
-    <envs>
-      <env key="FLASK_APP" value="app" />
-    </envs>
-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
-    <option name="myEnvs">
-      <map>
-        <entry key="FLASK_APP" value="app" />
-      </map>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JupyterTrust" id="776eed6f-471f-45fe-a7e7-e0c79bc452d3" />
-  <component name="ProjectId" id="1Rh9wlrUptG1Z1I5pp3MwYWTQEZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="JupyterTrust" id="dc279a01-e3a7-4bfd-8926-77247be22421" />
+  <component name="ProjectId" id="1pnOIGJqWNS36TgAxLNaMt6yamW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,33 +24,39 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="example03" type="Python.FlaskServer">
+  <component name="RunManager" selected="Flask server.KeepNTouchv1-master">
+    <configuration name="KeepNTouchv1-master" type="PythonConfigurationType" factoryName="Python">
+      <module name="KeepNTouchv1-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="KeepNTouchv1-master" type="Python.FlaskServer">
       <option name="flaskDebug" value="true" />
-      <module name="example03" />
+      <module name="KeepNTouchv1-master" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="EMAIL_USERNAME" value="*******@mail.com" />
-        <env name="EMAIL_PASSWORD" value="********" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="SDK_HOME" value="C:\Users\Kristina Gjuci\PycharmProjects\KeepNTouchv1-master\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -101,133 +65,49 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.grunt">
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Flask server.KeepNTouchv1-master" />
+      <item itemvalue="Python.KeepNTouchv1-master" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2a04c73-0a55-4a42-bb22-abff21888052" name="Default Changelist" comment="" />
-      <created>1541981348124</created>
+      <changelist id="ad55859c-e15c-47c4-9901-04cfc12794e0" name="Default Changelist" comment="" />
+      <created>1615815307983</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541981348124</updated>
-      <workItem from="1543994497747" duration="6679000" />
-      <workItem from="1545123674250" duration="1607000" />
-      <workItem from="1545163224751" duration="6969000" />
-      <workItem from="1545204926407" duration="4007000" />
-      <workItem from="1545739502792" duration="329000" />
-      <workItem from="1570108703562" duration="1834000" />
-      <workItem from="1614718528481" duration="5060000" />
-      <workItem from="1614789281768" duration="11289000" />
-      <workItem from="1614810406689" duration="404000" />
-      <workItem from="1614846526235" duration="179000" />
-      <workItem from="1614952708284" duration="3144000" />
-      <workItem from="1615213090695" duration="481000" />
-      <workItem from="1615224102016" duration="10447000" />
-      <workItem from="1615278869336" duration="5484000" />
-      <workItem from="1615303377433" duration="162000" />
-      <workItem from="1615324087830" duration="3469000" />
+      <updated>1615815307983</updated>
+      <workItem from="1615815379800" duration="27913000" />
     </task>
-    <task id="LOCAL-00001" summary="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm">
-      <created>1542717635581</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1542717635581</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Session 2&#10;# Working with Flask-wtf&#10;# Working with Validation &#10;# Working with session variable&#10;# adding the form inside the html page with FlaskForm" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="123" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614718805859">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="447" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615833308229">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="184" y="123" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1614718805859" />
-    <state x="529" y="373" key="Github.CreateGistDialog" timestamp="1614810769642">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="447" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1615833308229" />
+    <state width="798" height="102" key="GridCell.Tab.0.bottom" timestamp="1616755222890">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="529" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1614810769642" />
-    <state x="581" y="351" key="Github.ShareDialog" timestamp="1615279152364">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="798" height="102" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616755222890" />
+    <state width="798" height="102" key="GridCell.Tab.0.center" timestamp="1616755222889">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="581" y="351" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1615279152364" />
-    <state x="494" y="152" key="Github.UntrackedFilesDialog" timestamp="1615279199337">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="798" height="102" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616755222889" />
+    <state width="798" height="102" key="GridCell.Tab.0.left" timestamp="1616755222889">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="494" y="152" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1615279199337" />
-    <state width="699" height="227" key="GridCell.Tab.0.bottom" timestamp="1615329202391">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="798" height="102" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616755222889" />
+    <state width="798" height="102" key="GridCell.Tab.0.right" timestamp="1616755222889">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="699" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615329202391" />
-    <state width="699" height="227" key="GridCell.Tab.0.center" timestamp="1615329202389">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615329202389" />
-    <state width="699" height="227" key="GridCell.Tab.0.left" timestamp="1615329202388">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615329202388" />
-    <state width="699" height="227" key="GridCell.Tab.0.right" timestamp="1615329202390">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="699" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615329202390" />
-    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1614793229251">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="228" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1614793229251" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1614953853218">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614953853218" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1615279134698">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1615279134698" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615281679119">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1615281679119" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="jinja2-line">
-          <url>file://$PROJECT_DIR$/templates/index.html</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="798" height="102" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616755222889" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/InformationSystem19_20$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1570110090074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/InformationSystem19_20_master$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1614807750893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KeepNTouch$example03.coverage" NAME="example03 Coverage Results" MODIFIED="1615328366987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/KeepNTouchv1_master$KeepNTouchv1_master.coverage" NAME="KeepNTouchv1-master Coverage Results" MODIFIED="1616755222871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
