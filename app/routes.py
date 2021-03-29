@@ -132,8 +132,8 @@ def register():
 
 @app.route("/login",methods=['GET','POST'])
 def login():
-    if current_user.is_authenticated:
-        return redirect(url_for('index'))
+    #if current_user.is_authenticated:
+    #    return redirect(url_for('index'))
     formpage=LoginForm()
     if formpage.validate_on_submit():
         # TODO make login possible also for BPs
