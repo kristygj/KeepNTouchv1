@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField,PasswordField,ValidationError,FileField,RadioField, DateField, IntegerField,TextAreaField, HiddenField
+from wtforms import StringField,SubmitField,PasswordField,ValidationError,FileField,RadioField, DateField, IntegerField,TextAreaField, BooleanField, HiddenField
 from wtforms.validators import Length,Email,EqualTo,DataRequired,regexp
 from models import Student, BusinessPartner, Event
 from datetime import date
@@ -34,6 +34,7 @@ class formCreateEvent(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email(),Length(min=4,max=50)])
     password = PasswordField('Password', validators=[DataRequired()])
+    remember_me = BooleanField("Remember me")
     submit = SubmitField('Submit')
 
 class confirmParticipation(FlaskForm):
@@ -87,3 +88,8 @@ class FeedbackForm(FlaskForm):
     title= StringField('Title', validators=[DataRequired()])
     content= TextAreaField('Content', validators=[DataRequired()])
     submit = SubmitField('Post')
+
+class PostForm(FlaskForm):
+    post = TextAreaField('Say something', validators=[
+        DataRequired(), Length(min=1, max=140)])
+    submit = SubmitField('Submit')
