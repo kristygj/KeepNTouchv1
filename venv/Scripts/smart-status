@@ -1,4 +1,4 @@
-#!C:\Users\Kristina Gjuci\PycharmProjects\KeepNTouchv1-master\venv\Scripts\python.exe
+#!C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master\venv\Scripts\python.exe
 USAGE = """S.M.A.R.T status
 
 More user friendly smartctl status command

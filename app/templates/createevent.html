@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
     <title>{% extends "layout.html" %}
 
 {% block content %}
@@ -13,13 +10,6 @@
             <fieldset class="form-group">
                 <legend class="border-botton mb-4">Create your next Event!</legend>
 
-            <!--   name = StringField('Name:', validators=[DataRequired(), Length(min=2, max=100)])
-    date = DateField('Date: ',validators=[DataRequired()] )
-    description = StringField('Description:', validators=[DataRequired(), Length(min=50, max=500)])
-    maxPeople = IntegerField('Maximum # of Partecipants:', validators=[DataRequired()])
-    location = StringField('Description:', validators=[DataRequired(), Length(min=3, max=100)])
-
-    submit = SubmitField('Submit') -->
                 <div class="form-group ">
                     {{ formpage.name.label(class="form-control-lable") }}
                     {% if formpage.name.errors %}
@@ -85,7 +75,7 @@
 </div>
 
 
-{% endblock content %}</title>
+{% endblock  %}</title>
 </head>
 <body>
 

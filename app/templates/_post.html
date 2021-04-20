@@ -1,0 +1,19 @@
+
+
+<table class="table table-hover">
+        <tr>
+
+            <td width="70px">
+
+                <img src="{{ post.author.avatar(70) }}"/>
+            </td>
+
+            <td>
+            {{ post.author.name }}
+
+                said {{ moment(post.timestamp).fromNow() }}:
+                <br>
+                {{ post.body }}
+            </td>
+        </tr>
+</table>

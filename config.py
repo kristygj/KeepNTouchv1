@@ -9,3 +9,4 @@ class Config(object):
     MAIL_TLS=True
     MAIL_USERNAME='keepntouch@engineer.com'
     MAIL_PASSWORD='keepntouch'
+    POSTS_PER_PAGE=3

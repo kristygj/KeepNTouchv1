@@ -1,23 +1,27 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
-{%  block content %}
+{% block content %}
+<h1>Feedback</h1>
 
     <div class="content-section">
-            <form  method="post" enctype="multipart/form-data">
-              {{ form.hidden_tag() }}
+            <form method="POST" action="">
+            {{  formpage.hidden_tag()}}
+
+
             <fieldset class="form-group">
-                <legend class="border-botton mb-4">Leave your feedback</legend>
+                <legend class="border-botton mb-4">Hey {{ session['name'] }}, leave a feedback for '{{ session['event_name'] }}':</legend>
+
                 <div class="form-group ">
-                    {{ form.title.label(class="form-control-lable") }}
-                    {% if form.title.errors %}
-                        {{ form.title(class="form-control form-control-lg is-invalid") }}
+                    {{ formpage.title.label(class="form-control-lable") }}
+                    {% if formpage.title.errors %}
+                        {{ formpage.title(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
-                        {% for eroor in form.title.errors %}
+                        {% for eroor in formpage.title.errors %}
                             <span>{{ eroor }}</span>
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ form.title(class="form-control form-control-lg") }}
+                    {{ formpage.title(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
 
@@ -25,33 +29,30 @@
 
                 <div class="form-group">
 
-                    {{ form.content.label(class="form-control-lable") }}
-                    {% if form.content.errors %}
-                        {{ form.content(class="form-control form-control-lg is-invalid") }}
+                    {{ formpage.content.label(class="form-control-lable") }}
+                    {% if formpage.content.errors %}
+                        {{ formpage.content(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
-                        {% for eroor in form.content.errors %}
+                        {% for eroor in formpage.content.errors %}
                             <span>{{ eroor }}</span>
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ form.content(class="form-control form-control-lg") }}
+                    {{ formpage.content(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
 
-            </fieldset>
-            </form>
                 </div>
 
                 <div class="form-group ">
-                    {{ form.submit(class="btn btn-outline-info") }}
+                    {{ formpage.submit(class="btn btn-outline-info") }}
                 </div>
 
             </fieldset>
+    </form>
 
+
+
+{% endblock  %}
 
 </div>
-
-
-
-
-{% endblock content %}

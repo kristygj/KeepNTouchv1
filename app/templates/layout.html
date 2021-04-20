@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     {% if title %}
-    <title>{{ title }} Page</title>
+    <title>{{ title }} </title>
     {% else %}
     <title>KEEPnTOUCH</title>
     {% endif %}
@@ -12,24 +12,32 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='main.css') }}" >
 
-<body>
+
+
+
 
 <header class="site-header">
   <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
     <div class="container">
-      <a class="navbar-brand mr-4" href="/">KEEPnTOUCH </a>
+      <a class="navbar-brand mr-4" href="/home">KEEPnTOUCH </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggle">
+      {% if session.get('student')== True or session.get('businesspartner')==True %}
         <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link" href="/">wall</a>
-          <a class="nav-item nav-link" href="/upload">upload</a>
-          <a class="nav-item nav-link" href="/mail">send mail</a>
-          {% if session.get('student') == False %}
-                <a class="nav-item nav-link" href="/createevent">create event</a>
+          <a class="nav-item nav-link" href="/home">Discover</a>
+          {% if session.get('student') == False and session.get('businesspartner')==True %}
+                <a class="nav-item nav-link" href="/createevent">Create event</a>
           {%  endif %}
-          <a class="nav-item nav-link" href="/map">api Bzz</a>
+        {% endif %}
+                     <a class="nav-item nav-link" href="/">Home</a>
+
+          <a class="nav-item nav-link" href="/about">About us</a>
+            {% if session.get('student')== True or session.get('businesspartner')==True %}
+
+                    <a class="nav-item nav-link" href="/explore">Explore</a>
+            {% endif %}
         </div>
         <!-- Navbar Right Side -->
 
@@ -50,31 +58,37 @@
   </nav>
 </header>
 
+
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8">
       {% block content %}
+
+          <div class="container">
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          <ul class=flashes>
+          {% for message in messages %}
+              <div class="alert alert-info" role="alert">{{ message }}</div>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% endwith %}
+
+          {# application content needs to be provided in the app_content block #}
+
+        </div>
       {% endblock %}
     </div>
-    <div class="col-md-4">
-      <div class="content-section">
-       <img src="{{url_for('static', filename='logo.png')}}" align="center" width="70%" />
-        <p align="center" class='text-muted'>is a social platform in which you can
-          <ul class="list-group">
-            <li align="center" class="list-group-item list-group-item-light">Meet people</li>
-            <li align="center" class="list-group-item list-group-item-light">Discover places</li>
-            <li align="center" class="list-group-item list-group-item-light">Create network</li>
-            <li align="center" class="list-group-item list-group-item-light">Feel good</li>
-          </ul>
-        </p>
-      </div>
-    </div>
+
   </div>
 </main>
 
+                <p class="mt-5 mb-3 text-muted">&copy; KEEPnTOUCH-2021</p>
 
-</body>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

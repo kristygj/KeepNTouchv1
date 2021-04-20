@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField,PasswordField,ValidationError,FileField,RadioField, DateField, IntegerField,TextAreaField, BooleanField, HiddenField
+from wtforms import StringField,SubmitField,PasswordField,ValidationError,FileField,RadioField, DateField, IntegerField,TextAreaField, HiddenField
 from wtforms.validators import Length,Email,EqualTo,DataRequired,regexp
 from models import Student, BusinessPartner, Event
 from datetime import date
@@ -34,8 +34,7 @@ class formCreateEvent(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email(),Length(min=4,max=50)])
     password = PasswordField('Password', validators=[DataRequired()])
-    remember_me = BooleanField("Remember me")
-    submit = SubmitField('Submit')
+    submit = SubmitField('Log in')
 
 class confirmParticipation(FlaskForm):
     event_id = IntegerField('event_id',render_kw={'readonly': True})
@@ -49,47 +48,19 @@ class LeaveFeedback(FlaskForm):
     event_id = IntegerField('event_id', render_kw={'readonly':True})
     submitE = SubmitField('Leave Feedback')
 
-class UploadForm(FlaskForm):
-    file = FileField('file',validators=[DataRequired()])
-    upload=SubmitField('upload')
-
-class UpdateAccount(FlaskForm):
-    name = StringField('Name:', validators=[DataRequired(), Length(min=2, max=100)])
-    usertype = RadioField('You are', choices=[('Student', 'Student'), ('Activity Owner', 'Activity Owner')])
-    university = StringField('University', validators=[Length(max=50)])
-    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png'])])
-    submit = SubmitField('Update')
-
-    def validate_username(self, name):
-        if name.data != current_user.name:
-            user = Student.query.filter_by(name=name.data).first()
-            if user:
-                raise ValidationError('That username is taken. Please choose a different one.')
-
-
-    def validate_email(self,email):
-        #if email.data != current_user.email:
-        st = Student.query.filter_by(email=email.data).first()
-        bp = BusinessPartner.query.filter_by(email=email.data).first()
-        if st or bp:
-            raise ValidationError('You have been already registerd with this email !')
-
-
-class EmptyForm(FlaskForm):
-    submit = SubmitField('Submit')
-
 class EditProfileForm(FlaskForm):
     name = StringField('Username', validators=[DataRequired()])
     about_me = TextAreaField('About me', validators=[Length(min=0, max=140)])
+    university = StringField('University',validators=[DataRequired()])
     submit = SubmitField('Submit')
-    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png'])])
 
 class FeedbackForm(FlaskForm):
-    title= StringField('Title', validators=[DataRequired()])
-    content= TextAreaField('Content', validators=[DataRequired()])
-    submit = SubmitField('Post')
+    title= StringField('Title', validators=[DataRequired(), Length(min=5, max=50)])
+    content= TextAreaField('Content', validators=[DataRequired(), Length(min=50, max=500)])
+    submit = SubmitField('Post!')
 
 class PostForm(FlaskForm):
     post = TextAreaField('Say something', validators=[
         DataRequired(), Length(min=1, max=140)])
     submit = SubmitField('Submit')
+

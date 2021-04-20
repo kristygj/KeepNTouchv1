@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\KRISTI~1\PYCHAR~1\KEEPNT~1\venv"
+set "VIRTUAL_ENV=C:\Users\KRISTI~1\DOWNLO~1\KE6880~1\KEEPNT~1\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f3e24dd-1f0e-4c55-96bc-35695b359e76" name="Default Changelist" comment="" />
+    <list default="true" id="01c6d5a7-8e93-45b7-b45f-99fd17e4b48e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="JupyterTrust" id="dc279a01-e3a7-4bfd-8926-77247be22421" />
-  <component name="ProjectId" id="1qRjSwvJOaads2iOyzgKzfNOqY8" />
+  <component name="ProjectId" id="1qvQ4NELwxh7gjreVUCKHzi76fM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Flask server.Flask">
-    <configuration name="KeepNTouchv1" type="PythonConfigurationType" factoryName="Python">
-      <module name="KeepNTouchv1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master\app\static" />
+      <recent name="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master\app\templates" />
+      <recent name="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master\app" />
+      <recent name="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master" />
+      <recent name="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master (1)\KeepNTouchv2-master\vendor" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
       <option name="flaskDebug" value="true" />
-      <module name="KeepNTouchv1" />
-      <option name="target" value="C:\Users\Kristina Gjuci\Documents\GitHub\KeepNTouchv1" />
-      <option name="targetType" value="PATH" />
+      <module name="KeepNTouchv1-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Kristina Gjuci\Documents\GitHub\KeepNTouchv1\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="C:\Users\Kristina Gjuci\Downloads\KeepNTouchv2-master\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -61,54 +65,72 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Flask server.Flask" />
-      <item itemvalue="Python.KeepNTouchv1" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f3e24dd-1f0e-4c55-96bc-35695b359e76" name="Default Changelist" comment="" />
-      <created>1617049304302</created>
+      <changelist id="01c6d5a7-8e93-45b7-b45f-99fd17e4b48e" name="Default Changelist" comment="" />
+      <created>1617957395897</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617049304302</updated>
-      <workItem from="1617049321029" duration="842000" />
+      <updated>1617957395897</updated>
+      <workItem from="1617957397856" duration="49889000" />
+      <workItem from="1618499372079" duration="41914000" />
+      <workItem from="1618656417172" duration="1195000" />
+      <workItem from="1618673811714" duration="14326000" />
+      <workItem from="1618782462550" duration="27884000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="447" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617049552504">
+    <state x="361" y="53" key="#Plugins" timestamp="1617958026586">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1617049552504" />
-    <state x="772" y="191" key="FileChooserDialogImpl" timestamp="1617049496880">
+    <state x="361" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1617958026586" />
+    <state x="568" y="121" key="#Python" timestamp="1617957739945">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="772" y="191" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617049496880" />
-    <state width="798" height="208" key="GridCell.Tab.0.bottom" timestamp="1617051548802">
+    <state x="568" y="121" key="#Python/0.0.1536.824@0.0.1536.824" timestamp="1617957739945" />
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618499762827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="798" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617051548802" />
-    <state width="798" height="208" key="GridCell.Tab.0.center" timestamp="1617051548801">
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1618499762827" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618565927702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="798" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617051548801" />
-    <state width="798" height="208" key="GridCell.Tab.0.left" timestamp="1617051548801">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1618565927702" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1617957540608">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="798" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617051548801" />
-    <state width="798" height="208" key="GridCell.Tab.0.right" timestamp="1617051548801">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617957540608" />
+    <state width="724" height="250" key="GridCell.Tab.0.bottom" timestamp="1618926087403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="798" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617051548801" />
+    <state width="724" height="250" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618926087403" />
+    <state width="724" height="250" key="GridCell.Tab.0.center" timestamp="1618926087395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="250" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618926087395" />
+    <state width="724" height="250" key="GridCell.Tab.0.left" timestamp="1618926087395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="250" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618926087395" />
+    <state width="724" height="250" key="GridCell.Tab.0.right" timestamp="1618926087403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="250" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618926087403" />
+    <state x="260" y="114" key="SettingsEditor" timestamp="1618835137495">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="260" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618835137495" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KeepNTouchv1$KeepNTouchv1.coverage" NAME="KeepNTouchv1 Coverage Results" MODIFIED="1617049412705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KeepNTouchv1$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1617049582153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/KeepNTouchv2_master$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1618926087347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

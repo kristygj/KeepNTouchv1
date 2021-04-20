@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<h3>The following feedbacks were left for the event "<b>{{ title }}</b>"</h3>
+{% for feedback in feedbacks %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ Student.query.filter_by(id=feedback.student_id).first().name }}</a> <!-- put the author of the event here, have to query it cause only have bp's id-->
+      <small class="text-muted">had this personal experience:</small>
+    </div >
+    <h2><a class="article-title" href="#">{{ feedback.title }}</a></h2>
+    <p class="article-content">{{ feedback.content  }}
+        <br>
+    </p>
+
+  </div>
+</article>
+{% endfor %}
+{% endblock  %}

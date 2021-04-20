@@ -1,15 +1,17 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-
     <div class="content-section">
-            <form method="POST" action="">
+
+
+     <img class="img-rounded " src="{{url_for('static', filename='TOUCH-main.png')}}" align="center" width="40%">
+
+         <form method="POST" action="" class="form">
             {{  formpage.hidden_tag()}}
             <fieldset class="form-group">
                 <legend class="border-botton mb-4">Registration for KeepNTouch!</legend>
                 <div class="form-group ">
-                    {{ formpage.name.label(class="form-control-lable") }}
+                    {{ formpage.name(class="form-control" , id="name", required="required", type="text", value="", placeholder="Name") }}
                     {% if formpage.name.errors %}
                         {{ formpage.name(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -18,7 +20,6 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.name(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
                 <div class="form-check form-check-inline">
@@ -33,7 +34,7 @@
 
                 </div>
                 <div class="form-group">
-                    {{ formpage.email.label(class="form-control-lable") }}
+                    {{ formpage.email(class="form-control" , id="email", required="required", type="text", value="", placeholder="Email") }}
                     {% if formpage.email.errors %}
                         {{ formpage.email(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -42,20 +43,18 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.email(class="form-control form-control-lg") }}
                     {% endif %}
 
                 </div>
 
                 <div class="form-group">
-                    {{ formpage.university.label(class="form-control-lable") }}
-                    <small>(Leave blank if you're an activity owner)</small>
-                    {{ formpage.university(class="form-control form-control-lg") }}
+                    {{ formpage.university(class="form-control" , id="university", type="text", value="", placeholder="University (Leave blank if you're an activity owner)") }}
+
                 </div>
 
                 <div class="form-group">
 
-                    {{ formpage.password.label(class="form-control-lable") }}
+                    {{ formpage.password(class="form-control" , id="password", required="required", type="password", value="", placeholder="Password") }}
                     {% if formpage.password.errors %}
                         {{ formpage.password(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -64,11 +63,10 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    {{ formpage.password_con.label(class="form-control-lable") }}
+                    {{ formpage.password_con(class="form-control", id="password_con", required="required", type="password", value="", placeholder="Confirm password") }}
                     {% if formpage.password_con.errors %}
                         {{ formpage.password_con(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -77,17 +75,21 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.password_con(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
                 <div class="form-group ">
-                    {{ formpage.submit(class="btn btn-outline-info") }}
+                    {{ formpage.submit(class="btn btn-light") }}
                 </div>
 
             </fieldset>
 
         </form>
+    </div>
+    </div>
+
+
+
 </div>
-
-
-{% endblock content %}
+</div>
+</div>
+{% endblock  %}

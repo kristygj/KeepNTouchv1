@@ -1,9 +1,21 @@
-{% extends "layout.html" %}
+{% extends 'layout.html' %}
+
 
 <!--  #IMPLEMENT THE LOGIN FOR BPs! check on that table -->
 {% block content %}
-<h1>{{ title }}</h1>
- <div class="content-section">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+              <img class="img-rounded " src="{{url_for('static', filename='see.jpg')}}" align="center" width="100%">
+
+      </div>
+    </div>
+</div>
+
+ <div class="content-section" align="center"  >
+ <img class="img-rounded " src="{{url_for('static', filename='TOUCH-main.png')}}" align="center" width="40%">
     {% if email %}
         <p>You have successfully logged in with {{ email }} and your user ID is {{ session.get('id') }}</p>
     {% else %}
@@ -12,7 +24,7 @@
     <fieldset class="form-group">
                 <legend class="border-botton mb-4">Login to the KEEPnTOUCH world!</legend>
                 <div class="form-group ">
-                    {{ formpage.email.label(class="form-control-lable") }}
+                    {{ formpage.email(class="form-control", id="email", required="required", type="text", value="", placeholder="Email") }}
                     {% if formpage.email.errors %}
                         {{ formpage.email(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -21,11 +33,10 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.email(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
                 <div class="form-group">
-                    {{ formpage.password.label(class="form-control-lable") }}
+                    {{ formpage.password(class="form-control" , id="password", required="required", type="password", value="", placeholder="Password") }}
                     {% if formpage.password.errors %}
                         {{ formpage.password(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -34,19 +45,27 @@
                         {% endfor %}
                         </div>
                     {% else %}
-                    {{ formpage.password(class="form-control form-control-lg") }}
                     {% endif %}
-                    <p>{{ formpage.remember_me() }} {{ formpage.remember_me.label }}</p>
+
                 </div>
+               <div class="checkbox mb-3">
+                  <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+               </div>
 
                 <div class="form-group ">
-                    {{ formpage.submit(class="btn btn-outline-info") }}
-                </div>
+                    {{ formpage.submit(class="btn btn-light") }}
 
+
+                </div>
+                <p class="mt-5 mb-3 text-muted">&copy; KEEPnTOUCH-2021</p>
             </fieldset>
 
     </form>
 
     {% endif %}
+ </div>
 </div>
-{% endblock content %}
+</div>
+{% endblock  %}
